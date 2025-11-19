@@ -1,0 +1,17 @@
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:assertion="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://fd60731c6d62.ngrok-free.app/metadata">
+<SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<KeyDescriptor use="signing">
+<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIDyzCCArOgAwIBAgIUK5/Ybeuz+yMFpbEZe+zmsPSdrt0wDQYJKoZIhvcNAQELBQAwdTELMAkGA1UEBhMCU0UxEjAQBgNVBAgMCVN0b2NraG9sbTESMBAGA1UEBwwJU3RvY2tob2xtMRQwEgYDVQQKDAtOaWtsYXMgVGVzdDEQMA4GA1UECwwHUHJlc2FsZTEWMBQGA1UEAwwNc3AubmlrbGFzLmNvbTAeFw0yNTExMTgxMzQ5MDZaFw0yNjExMTgxMzQ5MDZaMHUxCzAJBgNVBAYTAlNFMRIwEAYDVQQIDAlTdG9ja2hvbG0xEjAQBgNVBAcMCVN0b2NraG9sbTEUMBIGA1UECgwLTmlrbGFzIFRlc3QxEDAOBgNVBAsMB1ByZXNhbGUxFjAUBgNVBAMMDXNwLm5pa2xhcy5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCjbE3KZFwkusw03k6dYRmvWixbmFdw3hxyJ2E6Sn09RkwT9Xh0cskTKde0+hLan/hFId4ip3u73tZ4iPlbnsg7tLClB07nEyoz6Qz4MC72XeVzzqAtq/48LLD4Nw93G3qz9pWlrZQxiTE2RuEilUpDTAYFOY+csYyip84TjvLAwjvBJcsKZL39fQ1ugZscBDlz7eiQm2kp0ga1AdRpueOo4EoL8W6V3bFzVqbd/RZ20ZR9AOtlJs650FckYUEpBZq08Rm3IHJEm4Yg7dXAgTzOy6xTXkOYai6nFdKeIqFfeliF/I8SbsrpxKigzfYvSCV+6UMbEWY4n1NVQfjiWZnbAgMBAAGjUzBRMB0GA1UdDgQWBBRuLQawYV9XStQl/CI3K7EKLEcyaDAfBgNVHSMEGDAWgBRuLQawYV9XStQl/CI3K7EKLEcyaDAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQAA1IWyxg3iQmYLRBpDt1lHuFFYcqe7APgXvhHbbqvjw800eM4srTh+CzwHI8C2mMGe55wrfXhToX9WwFH54ucb1c2iuvCNG3HphAiXXGX2bhARXFiegRtajEk1ns0Q9sTeh5TVeqIrZu8GdecQvAzY5mm7ewC+yZ23V8DsGCSGSh8ZhVdJKetBYeWPQwZkdP7RmB6XY4JqYd5Nl5PYAnn5/4scSAns8vXVjJa282F6DmultdSv9xk7nOVoAggwJCDuyruW4HPu8Cv+fvJ5/i+JwuFGzgJAvIqPCi6Zh4i5L8TCHHzYzg2zRNC5Lun33/3kOJFstqfBx3s39H/waFI4
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</KeyDescriptor>
+<NameIDFormat>
+urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress
+</NameIDFormat>
+<AssertionConsumerService index="0" Binding="undefined" Location="https://fd60731c6d62.ngrok-free.app/assert"/>
+</SPSSODescriptor>
+</EntityDescriptor>

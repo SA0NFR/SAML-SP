@@ -1,0 +1,17 @@
+{
+  "name": "saml",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "samlify": "^2.10.1",
+    "xml-crypto": "^6.1.2"
+  }
+}
