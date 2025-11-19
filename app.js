@@ -1,7 +1,7 @@
 const express = require("express");
 const saml = require("samlify");
 const fs = require("fs");
-const ngrokUrl = "https://fd60731c6d62.ngrok-free.app";
+const appUrl = "https://saml-sp-lbi2.onrender.com";
 
 const app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -9,10 +9,10 @@ app.use(express.urlencoded({ extended: true }));
 // ====== Service Provider (your SP) ======
 const sp = saml.ServiceProvider({
     //  entityID: "http://localhost:3000/metadata",
-    entityID: ngrokUrl + "/metadata",
+    entityID: appUrl + "/metadata",
     assertionConsumerService: [{
         Binding: saml.Constants.namespace.post,
-        Location: ngrokUrl + "/assert"
+        Location: appUrl + "/assert"
     }],
     wantMessageSigned: true,   // important
     authnRequestsSigned: true,  // important
@@ -67,4 +67,4 @@ app.post("/assert", async (req, res) => {
 });
 
 // ====== START SERVER ======
-app.listen(3000, () => console.log("SAML SP running on http://localhost:3000"));
+app.listen(80, () => console.log("SAML SP running on http://localhost:80"));
