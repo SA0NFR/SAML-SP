@@ -1,4 +1,4 @@
-<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:assertion="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://fd60731c6d62.ngrok-free.app/metadata">
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:assertion="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://saml-sp-lbi2.onrender.com/metadata">
 <SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
 <KeyDescriptor use="signing">
 <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -12,6 +12,6 @@ MIIDyzCCArOgAwIBAgIUK5/Ybeuz+yMFpbEZe+zmsPSdrt0wDQYJKoZIhvcNAQELBQAwdTELMAkGA1UE
 <NameIDFormat>
 urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress
 </NameIDFormat>
-<AssertionConsumerService index="0" Binding="undefined" Location="https://fd60731c6d62.ngrok-free.app/assert"/>
+<AssertionConsumerService index="0" Binding="undefined" Location="https://saml-sp-lbi2.onrender.com/assert"/>
 </SPSSODescriptor>
 </EntityDescriptor>

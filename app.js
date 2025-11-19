@@ -23,7 +23,7 @@ const sp = saml.ServiceProvider({
     privateKeyPass: "",
 
     // This adds the certificate into the metadata
-    // encPrivateKey: fs.readFileSync("./key/sp.key").toString(), // optional; safe to include
+    encPrivateKey: fs.readFileSync("./key/sp.key").toString(), // optional; safe to include
     signingCert: fs.readFileSync("./key/sp.crt").toString(),
     encryptionCert: fs.readFileSync("./key/sp.crt").toString(),
 
