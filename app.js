@@ -52,6 +52,7 @@ app.get("/login", async (req, res) => {
 
 // ====== ACS ENDPOINT (SAML Response comes here) ======
 app.post("/assert", async (req, res) => {
+    console.log("Inside /assert");
     try {
         const response = await sp.parseLoginResponse(idp, "post", req);
         console.log("SAML Response:", response);
@@ -67,4 +68,4 @@ app.post("/assert", async (req, res) => {
 });
 
 // ====== START SERVER ======
-app.listen(80, () => console.log("SAML SP running on http://localhost:80"));
+app.listen(80, () => console.log("SAML SP running on " + appUrl));
